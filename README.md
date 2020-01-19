@@ -22,3 +22,23 @@ Servidor irá iniciar na porta 3333 (http://localhost:3333)
 
 * /devs
 * /search
+
+## Web
+
+Projeto Web utilizando ReactJS.
+
+Utiliza os conceitos:
+
+* **Componente**: Bloco isolado de HTML, CSS e JS o qual não interfere no restante da aplicação;
+* **Propriedade**: Informação que um componente PAI passa para o componente FILHO;
+* **Estado**: Informações mantidas pelo componente (lembrar: imutabilidade).
+
+### Criação:
+
+`yarn create react-app web` ou `npx create-react-app web`
+
+### Iniciar Servidor
+
+`yarn start`
+
+Servidor irá iniciar na porta 3000 (http://localhost:3000/)

@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors');
 const routes = require('./routes');
 const mongoConfig = require('./credentials/mongo');
 
@@ -12,6 +13,7 @@ mongoose.connect(`mongodb+srv://${mongoConfig.user}:${mongoConfig.pass}@${mongoC
     }
 );
 
+app.use(cors({}));
 app.use(express.json());
 app.use(routes);
 
